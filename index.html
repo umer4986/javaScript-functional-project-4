@@ -1,0 +1,53 @@
+<html>
+<head>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>	
+	<div class = "super-container">
+		<nav>
+			<img src = "menu.png" class = "menu-img">
+			<img src = "logo.png" class = "logo-img">
+
+			<ul>
+				<li><a href = "#">Latest</a></li>
+				<li><a href = "#">Modern</a></li>
+				<li><a href = "#">Contemporary</a></li>
+				<li><a href = "#">Affordable</a></li>
+			</ul>
+   
+             <button type = "button" onclick="toggleButton()" id= "btn"><span></span></button>
+		</nav>
+
+
+		<div class = "lamp-container">
+			<img src = "lamp.png" class = "lamp">
+			<img src = "light.png" class = "light" id = "light">
+		</div>
+
+		<div class = "text-container">
+			<h1>Next generation<br> lighting</h1>
+			<p>This is one of the vast variety of modern lamps that we provide our
+			customers with high efficiency</p>
+			<a href = "#" ckass  = "">All Collections</a>
+			<div class = "control">
+				<p>04</p>
+				<div class = "line"><span></span></div>
+				<p>05</p>
+				
+			</div>
+		</div>
+	</div>
+
+<script>
+	var btn = document.getElementById("btn");
+	var light = document.getElementById("light");
+
+	function toggleButton(){
+		btn.classList.toggle("active");
+		light.classList.toggle("on");
+
+	}
+                   
+</script>	
+</body>
+</html>
